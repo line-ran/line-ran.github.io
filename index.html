@@ -1,0 +1,1283 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="中韩日产2区360免费版在线看，汇聚中韩日精选视频内容，免登录高清流畅播放，打造真实运营的视频品牌官网与活跃社区。">
+<title>中韩日产2区360免费版在线看 - 精选视频专区 | 免费高清流畅播放</title>
+<style>
+  :root{
+    --bg:#0a0c12;
+    --bg2:#11141d;
+    --panel:#161a26;
+    --panel2:#1d2231;
+    --line:#262c3d;
+    --txt:#e8ebf3;
+    --sub:#9aa3b8;
+    --muted:#6b7488;
+    --brand:#ff3d5a;
+    --brand2:#ff8a3d;
+    --blue:#3d8bff;
+    --cyan:#27d3c2;
+    --purple:#8a5cff;
+    --gold:#ffc44d;
+    --radius:16px;
+    --shadow:0 18px 48px rgba(0,0,0,.45);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    background:var(--bg);
+    color:var(--txt);
+    line-height:1.65;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  ::selection{background:var(--brand);color:#fff}
+  ::-webkit-scrollbar{width:10px;height:10px}
+  ::-webkit-scrollbar-track{background:var(--bg2)}
+  ::-webkit-scrollbar-thumb{background:#2c3347;border-radius:10px}
+  ::-webkit-scrollbar-thumb:hover{background:#3a445e}
+
+  .wrap{width:100%;max-width:1240px;margin:0 auto;padding:0 24px}
+  .container{position:relative}
+
+  /* ---------- Top bar ---------- */
+  .topbar{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    background:rgba(10,12,18,.72);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(255,255,255,.06);
+    transition:transform .35s ease, background .35s ease;
+  }
+  .topbar.hide{transform:translateY(-100%)}
+  .topbar-inner{
+    display:flex;align-items:center;gap:28px;
+    height:68px;
+  }
+  .logo{display:flex;align-items:center;gap:11px;font-weight:800;font-size:18px;letter-spacing:.3px;white-space:nowrap}
+  .logo-mark{
+    width:36px;height:36px;border-radius:11px;
+    background:linear-gradient(135deg,var(--brand),var(--brand2));
+    display:grid;place-items:center;
+    box-shadow:0 6px 18px rgba(255,61,90,.4);
+    flex-shrink:0;
+  }
+  .logo-mark svg{width:19px;height:19px}
+  .logo-text small{display:block;font-size:10px;font-weight:500;color:var(--muted);letter-spacing:2px;line-height:1.1}
+  .logo-text b{font-size:17px;letter-spacing:.5px}
+  nav.mainnav{display:flex;align-items:center;gap:4px;flex:1}
+  nav.mainnav a{
+    padding:8px 15px;border-radius:9px;font-size:14px;color:var(--sub);
+    transition:.2s;font-weight:500;position:relative;
+  }
+  nav.mainnav a:hover{color:var(--txt);background:rgba(255,255,255,.06)}
+  nav.mainnav a.active{color:#fff;background:rgba(255,61,90,.14)}
+  .topbar-actions{display:flex;align-items:center;gap:12px}
+  .search-box{
+    display:flex;align-items:center;gap:8px;
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:10px;padding:8px 14px;width:220px;
+    transition:.25s;
+  }
+  .search-box:focus-within{border-color:var(--brand);background:rgba(255,61,90,.08);width:260px}
+  .search-box svg{width:15px;height:15px;color:var(--muted);flex-shrink:0}
+  .search-box input{background:none;border:none;outline:none;color:var(--txt);font-size:13px;width:100%}
+  .search-box input::placeholder{color:var(--muted)}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    padding:10px 22px;border-radius:11px;font-size:14px;font-weight:600;
+    cursor:pointer;border:none;transition:.25s;white-space:nowrap;font-family:inherit;
+  }
+  .btn-primary{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;box-shadow:0 8px 22px rgba(255,61,90,.35)}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(255,61,90,.5)}
+  .btn-ghost{background:rgba(255,255,255,.07);color:var(--txt);border:1px solid rgba(255,255,255,.12)}
+  .btn-ghost:hover{background:rgba(255,255,255,.13);border-color:rgba(255,255,255,.22)}
+  .menu-toggle{display:none;background:none;border:none;color:var(--txt);cursor:pointer;padding:6px}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position:relative;
+    padding:150px 0 80px;
+    overflow:hidden;
+    background:
+      radial-gradient(900px 600px at 82% -5%, rgba(255,61,90,.22), transparent 60%),
+      radial-gradient(700px 500px at 8% 10%, rgba(61,139,255,.18), transparent 60%),
+      radial-gradient(600px 400px at 50% 90%, rgba(138,92,255,.12), transparent 65%),
+      var(--bg);
+  }
+  .hero::before{
+    content:"";position:absolute;inset:0;
+    background-image:linear-gradient(rgba(255,255,255,.028) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.028) 1px,transparent 1px);
+    background-size:52px 52px;
+    mask-image:radial-gradient(ellipse at center,black,transparent 78%);
+    -webkit-mask-image:radial-gradient(ellipse at center,black,transparent 78%);
+    pointer-events:none;
+  }
+  .hero-grid{
+    position:relative;z-index:2;
+    display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;
+  }
+  .hero-badge{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:7px 15px;border-radius:999px;font-size:12.5px;font-weight:600;
+    background:rgba(255,61,90,.13);color:#ff8ea0;border:1px solid rgba(255,61,90,.28);
+    margin-bottom:22px;letter-spacing:.3px;
+  }
+  .pulse{width:7px;height:7px;border-radius:50%;background:var(--brand);position:relative}
+  .pulse::after{content:"";position:absolute;inset:-4px;border-radius:50%;border:2px solid var(--brand);animation:pulse 1.8s ease-out infinite}
+  @keyframes pulse{0%{transform:scale(.6);opacity:.9}100%{transform:scale(2);opacity:0}}
+  h1{
+    font-size:clamp(34px,4.6vw,60px);
+    line-height:1.12;font-weight:800;letter-spacing:-1.2px;
+    margin-bottom:22px;
+  }
+  h1 .grad{
+    background:linear-gradient(110deg,var(--brand) 5%,var(--brand2) 45%,var(--gold) 95%);
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  }
+  .hero-sub{font-size:16.5px;color:var(--sub);max-width:520px;margin-bottom:30px}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:38px}
+  .btn-lg{padding:14px 30px;font-size:15px;border-radius:13px}
+  .hero-stats{display:flex;gap:38px;flex-wrap:wrap}
+  .hstat b{display:block;font-size:26px;font-weight:800;letter-spacing:-.5px}
+  .hstat b span{font-size:14px;color:var(--brand);margin-left:2px}
+  .hstat small{font-size:12.5px;color:var(--muted)}
+
+  /* Hero visual player */
+  .hero-visual{position:relative}
+  .player-card{
+    position:relative;border-radius:22px;overflow:hidden;
+    background:linear-gradient(160deg,#1a2030,#0f121b);
+    border:1px solid rgba(255,255,255,.09);
+    box-shadow:var(--shadow);
+    aspect-ratio:16/10;
+  }
+  .player-card .screen{
+    position:absolute;inset:0;
+    background:
+      radial-gradient(400px 260px at 30% 25%, rgba(255,61,90,.35), transparent 65%),
+      radial-gradient(360px 240px at 80% 75%, rgba(61,139,255,.30), transparent 65%),
+      linear-gradient(150deg,#171d2b,#0b0e15);
+  }
+  .player-card .screen::after{
+    content:"";position:absolute;inset:0;
+    background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+    background-size:34px 34px;
+  }
+  .play-btn{
+    position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+    width:76px;height:76px;border-radius:50%;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(8px);
+    border:1px solid rgba(255,255,255,.25);
+    display:grid;place-items:center;cursor:pointer;
+    transition:.3s;z-index:3;
+  }
+  .play-btn:hover{transform:translate(-50%,-50%) scale(1.08);background:rgba(255,61,90,.9);border-color:transparent}
+  .play-btn svg{width:28px;height:28px;margin-left:3px;color:#fff}
+  .player-tag{
+    position:absolute;top:16px;left:16px;z-index:3;
+    display:flex;align-items:center;gap:7px;
+    padding:6px 13px;border-radius:999px;font-size:11.5px;font-weight:700;
+    background:rgba(255,61,90,.92);color:#fff;letter-spacing:.5px;
+  }
+  .player-tag .pulse{background:#fff}
+  .player-tag .pulse::after{border-color:#fff}
+  .player-info{
+    position:absolute;left:0;right:0;bottom:0;z-index:3;
+    padding:44px 18px 16px;
+    background:linear-gradient(transparent,rgba(6,8,12,.92));
+  }
+  .player-info .pi-title{font-size:15px;font-weight:700;margin-bottom:8px}
+  .player-progress{height:4px;border-radius:4px;background:rgba(255,255,255,.18);overflow:hidden}
+  .player-progress i{display:block;height:100%;width:38%;background:linear-gradient(90deg,var(--brand),var(--brand2));border-radius:4px}
+  .player-meta{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-top:7px}
+  .floating-chip{
+    position:absolute;z-index:4;
+    display:flex;align-items:center;gap:8px;
+    padding:9px 14px;border-radius:12px;font-size:12px;font-weight:600;
+    background:rgba(22,26,38,.92);border:1px solid rgba(255,255,255,.1);
+    backdrop-filter:blur(10px);box-shadow:0 10px 26px rgba(0,0,0,.4);
+    animation:float 5s ease-in-out infinite;
+  }
+  .floating-chip.c1{top:-18px;right:24px;animation-delay:.2s}
+  .floating-chip.c2{bottom:-16px;left:-18px;animation-delay:1.2s}
+  .floating-chip .dot{width:8px;height:8px;border-radius:50%}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+
+  /* ---------- Section common ---------- */
+  section{position:relative}
+  .sec{padding:78px 0}
+  .sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:38px;flex-wrap:wrap}
+  .sec-title{font-size:clamp(24px,2.6vw,34px);font-weight:800;letter-spacing:-.6px;line-height:1.2}
+  .sec-title .hl{color:var(--brand)}
+  .sec-desc{color:var(--sub);font-size:14px;margin-top:9px;max-width:560px}
+  .sec-link{font-size:13.5px;color:var(--brand);font-weight:600;display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+  .sec-link:hover{gap:10px}
+  .sec-link svg{width:14px;height:14px;transition:.25s}
+
+  /* ---------- Category chips ---------- */
+  .chip-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px}
+  .chip{
+    padding:8px 18px;border-radius:999px;font-size:13px;font-weight:600;
+    background:rgba(255,255,255,.05);color:var(--sub);
+    border:1px solid rgba(255,255,255,.09);
+    cursor:pointer;transition:.22s;user-select:none;
+  }
+  .chip:hover{color:var(--txt);border-color:rgba(255,61,90,.4);background:rgba(255,61,90,.1)}
+  .chip.active{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border-color:transparent;box-shadow:0 6px 18px rgba(255,61,90,.3)}
+
+  /* ---------- Video grid ---------- */
+  .video-grid{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:24px;
+  }
+  .vcard{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    overflow:hidden;
+    transition:.3s;
+    cursor:pointer;
+    display:flex;flex-direction:column;
+  }
+  .vcard:hover{transform:translateY(-6px);border-color:rgba(255,61,90,.4);box-shadow:0 20px 40px rgba(0,0,0,.5)}
+  .vthumb{
+    position:relative;aspect-ratio:16/9;overflow:hidden;
+  }
+  .vthumb .art{position:absolute;inset:0;transition:transform .5s}
+  .vcard:hover .vthumb .art{transform:scale(1.07)}
+  .vthumb .art.a1{background:radial-gradient(circle at 30% 30%,#ff6b81,#8a2b4a 72%)}
+  .vthumb .art.a2{background:radial-gradient(circle at 70% 30%,#4d9bff,#1a3a80 72%)}
+  .vthumb .art.a3{background:radial-gradient(circle at 40% 60%,#27d3c2,#0d5c56 72%)}
+  .vthumb .art.a4{background:radial-gradient(circle at 60% 40%,#ffc44d,#8a5c00 72%)}
+  .vthumb .art.a5{background:radial-gradient(circle at 35% 65%,#8a5cff,#2a1a66 72%)}
+  .vthumb .art.a6{background:radial-gradient(circle at 65% 35%,#ff8a3d,#7a2e00 72%)}
+  .vthumb .art.a7{background:radial-gradient(circle at 45% 55%,#5cff9b,#0d5c2e 72%)}
+  .vthumb .art.a8{background:radial-gradient(circle at 55% 45%,#ff3d8a,#6a0d3a 72%)}
+  .vthumb .art::after{
+    content:"";position:absolute;inset:0;
+    background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);
+    background-size:26px 26px;
+    opacity:.6;
+  }
+  .vthumb .mini-play{
+    position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+    width:48px;height:48px;border-radius:50%;
+    background:rgba(0,0,0,.45);backdrop-filter:blur(6px);
+    display:grid;place-items:center;z-index:2;
+    transition:.3s;
+  }
+  .vcard:hover .mini-play{background:var(--brand);transform:translate(-50%,-50%) scale(1.1)}
+  .mini-play svg{width:17px;height:17px;margin-left:2px;color:#fff}
+  .vdur{
+    position:absolute;bottom:9px;right:9px;z-index:2;
+    padding:2px 8px;border-radius:6px;font-size:11px;font-weight:600;
+    background:rgba(0,0,0,.7);color:#fff;letter-spacing:.3px;
+  }
+  .vbadge{
+    position:absolute;top:9px;left:9px;z-index:2;
+    padding:3px 9px;border-radius:6px;font-size:10.5px;font-weight:700;letter-spacing:.4px;
+  }
+  .b-free{background:rgba(39,211,194,.92);color:#04201d}
+  .b-hot{background:rgba(255,61,90,.92);color:#fff}
+  .b-new{background:rgba(255,196,77,.92);color:#3a2600}
+  .vinfo{padding:14px 15px 16px;flex:1;display:flex;flex-direction:column}
+  .vtitle{
+    font-size:14px;font-weight:700;line-height:1.45;margin-bottom:8px;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+    min-height:40px;
+  }
+  .vmeta{
+    display:flex;align-items:center;gap:10px;font-size:11.5px;color:var(--muted);
+    margin-top:auto;flex-wrap:wrap;
+  }
+  .vmeta .vm{display:inline-flex;align-items:center;gap:4px}
+  .vmeta svg{width:12px;height:12px}
+  .vtag{
+    display:inline-block;padding:2px 8px;border-radius:5px;font-size:10.5px;font-weight:600;
+    background:rgba(61,139,255,.14);color:#7eb2ff;margin-bottom:9px;align-self:flex-start;
+  }
+
+  /* ---------- Feature strip ---------- */
+  .features{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:20px;
+  }
+  .feat{
+    padding:26px 22px;border-radius:18px;
+    background:linear-gradient(160deg,var(--panel),var(--bg2));
+    border:1px solid var(--line);
+    transition:.3s;position:relative;overflow:hidden;
+  }
+  .feat::before{
+    content:"";position:absolute;top:-40px;right:-40px;width:120px;height:120px;border-radius:50%;
+    background:radial-gradient(circle,rgba(255,61,90,.18),transparent 70%);
+    transition:.4s;
+  }
+  .feat:hover{transform:translateY(-5px);border-color:rgba(255,61,90,.35)}
+  .feat:hover::before{transform:scale(1.6)}
+  .feat-ic{
+    width:46px;height:46px;border-radius:13px;display:grid;place-items:center;margin-bottom:16px;
+    background:rgba(255,61,90,.13);color:var(--brand);
+  }
+  .feat-ic.blue{background:rgba(61,139,255,.13);color:var(--blue)}
+  .feat-ic.cyan{background:rgba(39,211,194,.13);color:var(--cyan)}
+  .feat-ic.gold{background:rgba(255,196,77,.13);color:var(--gold)}
+  .feat-ic svg{width:22px;height:22px}
+  .feat h3{font-size:16px;font-weight:700;margin-bottom:8px}
+  .feat p{font-size:13px;color:var(--sub);line-height:1.7}
+
+  /* ---------- Zone / 2区 special block ---------- */
+  .zone-block{
+    border-radius:26px;overflow:hidden;position:relative;
+    background:linear-gradient(135deg,#161a26 0%,#10121b 100%);
+    border:1px solid var(--line);
+    padding:52px 48px;
+  }
+  .zone-block::before{
+    content:"";position:absolute;top:-80px;right:-60px;width:340px;height:340px;border-radius:50%;
+    background:radial-gradient(circle,rgba(255,61,90,.22),transparent 65%);
+  }
+  .zone-block::after{
+    content:"";position:absolute;bottom:-100px;left:-60px;width:300px;height:300px;border-radius:50%;
+    background:radial-gradient(circle,rgba(61,139,255,.16),transparent 65%);
+  }
+  .zone-inner{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .zone-tag{
+    display:inline-flex;align-items:center;gap:7px;
+    padding:6px 14px;border-radius:999px;font-size:12px;font-weight:700;
+    background:rgba(255,196,77,.13);color:var(--gold);border:1px solid rgba(255,196,77,.3);
+    margin-bottom:18px;
+  }
+  .zone-inner h2{font-size:clamp(24px,2.8vw,36px);font-weight:800;line-height:1.25;margin-bottom:16px;letter-spacing:-.6px}
+  .zone-inner p{color:var(--sub);font-size:14.5px;margin-bottom:26px;max-width:440px}
+  .zone-list{display:grid;gap:13px}
+  .zone-item{display:flex;align-items:flex-start;gap:12px;font-size:13.5px;color:var(--sub)}
+  .zone-item .zi{
+    width:22px;height:22px;border-radius:7px;flex-shrink:0;margin-top:2px;
+    background:rgba(39,211,194,.14);color:var(--cyan);display:grid;place-items:center;
+  }
+  .zone-item .zi svg{width:12px;height:12px}
+  .zone-panel{
+    background:rgba(10,12,18,.6);border:1px solid var(--line);border-radius:18px;padding:24px;
+    backdrop-filter:blur(8px);
+  }
+  .zp-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;font-size:13px;color:var(--sub);font-weight:600}
+  .zp-live{display:flex;align-items:center;gap:6px;color:var(--brand);font-size:11.5px;font-weight:700}
+  .zp-live .pulse{background:var(--brand)}
+  .zp-live .pulse::after{border-color:var(--brand)}
+  .zp-row{
+    display:flex;align-items:center;gap:14px;padding:11px 0;
+    border-bottom:1px solid rgba(255,255,255,.055);
+  }
+  .zp-row:last-child{border-bottom:none;padding-bottom:0}
+  .zp-num{
+    width:26px;height:26px;border-radius:8px;display:grid;place-items:center;
+    font-size:12px;font-weight:800;background:rgba(255,61,90,.13);color:var(--brand);flex-shrink:0;
+  }
+  .zp-num.n2{background:rgba(61,139,255,.13);color:var(--blue)}
+  .zp-num.n3{background:rgba(39,211,194,.13);color:var(--cyan)}
+  .zp-num.n4{background:rgba(255,196,77,.13);color:var(--gold)}
+  .zp-num.n5{background:rgba(138,92,255,.13);color:var(--purple)}
+  .zp-row .zr-t{font-size:13.5px;font-weight:600;flex:1}
+  .zp-row .zr-s{font-size:11px;color:var(--muted);margin-top:1px;font-weight:400}
+  .zp-row .zr-v{font-size:12px;color:var(--cyan);font-weight:700}
+
+  /* ---------- Ranking ---------- */
+  .rank-wrap{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+  .rank-card{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;
+  }
+  .rank-head{display:flex;align-items:center;gap:10px;margin-bottom:20px}
+  .rank-head .rh-ic{
+    width:34px;height:34px;border-radius:10px;display:grid;place-items:center;
+    background:rgba(255,61,90,.14);color:var(--brand);
+  }
+  .rank-head .rh-ic.blue{background:rgba(61,139,255,.14);color:var(--blue)}
+  .rank-head h3{font-size:16.5px;font-weight:700}
+  .rank-head .rh-ic svg{width:17px;height:17px}
+  .rank-item{
+    display:flex;align-items:center;gap:14px;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.055);
+    transition:.2s;
+  }
+  .rank-item:last-child{border-bottom:none}
+  .rank-item:hover{background:rgba(255,255,255,.025);border-radius:8px;padding-left:6px}
+  .rk{
+    width:26px;text-align:center;font-size:15px;font-weight:800;color:var(--muted);font-style:italic;flex-shrink:0;
+  }
+  .rk.top1{color:var(--brand)}
+  .rk.top2{color:var(--brand2)}
+  .rk.top3{color:var(--gold)}
+  .rank-item .ri-th{width:52px;height:34px;border-radius:7px;flex-shrink:0;position:relative;overflow:hidden}
+  .rank-item .ri-th::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(135deg,rgba(255,255,255,.12),transparent);
+  }
+  .ri-th.t1{background:linear-gradient(135deg,#ff6b81,#8a2b4a)}
+  .ri-th.t2{background:linear-gradient(135deg,#4d9bff,#1a3a80)}
+  .ri-th.t3{background:linear-gradient(135deg,#27d3c2,#0d5c56)}
+  .ri-th.t4{background:linear-gradient(135deg,#ffc44d,#8a5c00)}
+  .ri-th.t5{background:linear-gradient(135deg,#8a5cff,#2a1a66)}
+  .ri-th.t6{background:linear-gradient(135deg,#ff8a3d,#7a2e00)}
+  .ri-th.t7{background:linear-gradient(135deg,#5cff9b,#0d5c2e)}
+  .ri-th.t8{background:linear-gradient(135deg,#ff3d8a,#6a0d3a)}
+  .ri-body{flex:1;min-width:0}
+  .ri-body .rib-t{font-size:13.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .ri-body .rib-s{font-size:11px;color:var(--muted);margin-top:2px}
+  .ri-play{
+    width:30px;height:30px;border-radius:50%;flex-shrink:0;display:grid;place-items:center;
+    background:rgba(255,255,255,.06);color:var(--sub);transition:.22s;
+  }
+  .rank-item:hover .ri-play{background:var(--brand);color:#fff}
+  .ri-play svg{width:11px;height:11px;margin-left:1px}
+
+  /* ---------- Testimonial / community ---------- */
+  .community{position:relative}
+  .comm-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .comm-card{
+    background:linear-gradient(160deg,var(--panel),var(--bg2));
+    border:1px solid var(--line);border-radius:18px;padding:26px 24px;
+    position:relative;transition:.3s;
+  }
+  .comm-card:hover{border-color:rgba(255,61,90,.35);transform:translateY(-4px)}
+  .comm-quote{font-size:38px;line-height:1;color:rgba(255,61,90,.28);font-family:Georgia,serif;margin-bottom:6px}
+  .comm-card p{font-size:13.5px;color:var(--sub);line-height:1.75;margin-bottom:20px;min-height:72px}
+  .comm-user{display:flex;align-items:center;gap:11px}
+  .comm-avatar{
+    width:38px;height:38px;border-radius:50%;flex-shrink:0;display:grid;place-items:center;
+    font-size:14px;font-weight:700;color:#fff;
+  }
+  .av1{background:linear-gradient(135deg,#ff3d5a,#ff8a3d)}
+  .av2{background:linear-gradient(135deg,#3d8bff,#27d3c2)}
+  .av3{background:linear-gradient(135deg,#8a5cff,#ff3d8a)}
+  .comm-user .cu-n{font-size:13px;font-weight:700}
+  .comm-user .cu-r{font-size:11px;color:var(--muted)}
+  .comm-stars{color:var(--gold);font-size:12px;letter-spacing:1px;margin-left:auto}
+
+  /* ---------- FAQ ---------- */
+  .faq-wrap{max-width:820px;margin:0 auto;display:grid;gap:13px}
+  .faq-item{
+    background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:.25s;
+  }
+  .faq-item.open{border-color:rgba(255,61,90,.35)}
+  .faq-q{
+    display:flex;align-items:center;justify-content:space-between;gap:16px;
+    padding:18px 22px;cursor:pointer;font-size:14.5px;font-weight:600;user-select:none;
+  }
+  .faq-q:hover{color:var(--brand)}
+  .faq-q .fq-ic{width:22px;height:22px;flex-shrink:0;color:var(--muted);transition:.3s}
+  .faq-item.open .fq-ic{transform:rotate(45deg);color:var(--brand)}
+  .faq-a{
+    max-height:0;overflow:hidden;transition:max-height .35s ease;
+    padding:0 22px;color:var(--sub);font-size:13.5px;line-height:1.8;
+  }
+  .faq-item.open .faq-a{max-height:260px;padding:0 22px 20px}
+
+  /* ---------- CTA banner ---------- */
+  .cta-banner{
+    position:relative;border-radius:26px;overflow:hidden;padding:56px 48px;text-align:center;
+    background:linear-gradient(120deg,rgba(255,61,90,.18),rgba(61,139,255,.14)),var(--panel);
+    border:1px solid rgba(255,255,255,.09);
+  }
+  .cta-banner::before{
+    content:"";position:absolute;inset:0;
+    background-image:radial-gradient(circle at 20% 20%,rgba(255,61,90,.2),transparent 40%),radial-gradient(circle at 80% 80%,rgba(61,139,255,.18),transparent 40%);
+  }
+  .cta-banner > *{position:relative;z-index:2}
+  .cta-banner h2{font-size:clamp(24px,3vw,38px);font-weight:800;margin-bottom:14px;letter-spacing:-.8px}
+  .cta-banner p{color:var(--sub);font-size:14.5px;max-width:520px;margin:0 auto 28px}
+  .cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .cta-note{margin-top:18px;font-size:12px;color:var(--muted)}
+
+  /* ---------- Footer ---------- */
+  footer{
+    background:var(--bg2);border-top:1px solid var(--line);padding:56px 0 30px;margin-top:40px;
+  }
+  .foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;margin-bottom:44px}
+  .foot-brand .logo{margin-bottom:16px}
+  .foot-brand p{font-size:13px;color:var(--sub);max-width:280px;line-height:1.8;margin-bottom:20px}
+  .foot-social{display:flex;gap:10px}
+  .foot-social a{
+    width:36px;height:36px;border-radius:10px;display:grid;place-items:center;
+    background:rgba(255,255,255,.06);color:var(--sub);transition:.22s;
+  }
+  .foot-social a:hover{background:var(--brand);color:#fff;transform:translateY(-3px)}
+  .foot-social svg{width:16px;height:16px}
+  .foot-col h4{font-size:13px;font-weight:700;margin-bottom:16px;letter-spacing:.5px}
+  .foot-col a{display:block;font-size:12.5px;color:var(--sub);padding:5px 0;transition:.2s}
+  .foot-col a:hover{color:var(--brand);padding-left:4px}
+  .foot-bottom{
+    border-top:1px solid var(--line);padding-top:22px;
+    display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
+    font-size:12px;color:var(--muted);
+  }
+  .foot-bottom .fb-links{display:flex;gap:18px}
+  .foot-bottom a:hover{color:var(--brand)}
+
+  /* ---------- Reveal animation ---------- */
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:translateY(0)}
+
+  /* ---------- Modal ---------- */
+  .modal-overlay{
+    position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;
+    background:rgba(4,6,10,.82);backdrop-filter:blur(10px);padding:24px;
+  }
+  .modal-overlay.show{display:flex}
+  .modal-box{
+    width:100%;max-width:760px;background:var(--panel);border:1px solid var(--line);
+    border-radius:20px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.7);
+    animation:modalIn .3s ease;
+  }
+  @keyframes modalIn{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:scale(1)}}
+  .modal-head{
+    display:flex;align-items:center;justify-content:space-between;padding:16px 20px;
+    border-bottom:1px solid var(--line);
+  }
+  .modal-head h3{font-size:15px;font-weight:700}
+  .modal-close{
+    width:32px;height:32px;border-radius:9px;border:none;cursor:pointer;
+    background:rgba(255,255,255,.06);color:var(--sub);display:grid;place-items:center;transition:.2s;
+  }
+  .modal-close:hover{background:var(--brand);color:#fff}
+  .modal-close svg{width:16px;height:16px}
+  .modal-screen{
+    aspect-ratio:16/9;position:relative;background:linear-gradient(150deg,#171d2b,#0b0e15);
+    display:grid;place-items:center;
+  }
+  .modal-screen .ms-art{
+    position:absolute;inset:0;
+    background:radial-gradient(400px 260px at 30% 30%,rgba(255,61,90,.38),transparent 62%),radial-gradient(360px 240px at 78% 72%,rgba(61,139,255,.32),transparent 62%);
+  }
+  .modal-screen .ms-art::after{
+    content:"";position:absolute;inset:0;
+    background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
+    background-size:40px 40px;
+  }
+  .modal-screen .ms-msg{position:relative;z-index:2;text-align:center;padding:20px}
+  .modal-screen .ms-msg .ms-ic{
+    width:64px;height:64px;border-radius:50%;margin:0 auto 16px;display:grid;place-items:center;
+    background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);
+  }
+  .modal-screen .ms-msg .ms-ic svg{width:26px;height:26px;color:#fff;margin-left:3px}
+  .modal-screen .ms-msg b{display:block;font-size:16px;margin-bottom:6px}
+  .modal-screen .ms-msg span{font-size:12.5px;color:var(--sub)}
+  .modal-foot{padding:16px 20px;font-size:12.5px;color:var(--muted);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+  /* ---------- Back to top ---------- */
+  .to-top{
+    position:fixed;right:24px;bottom:24px;z-index:90;
+    width:46px;height:46px;border-radius:13px;border:1px solid var(--line);
+    background:rgba(22,26,38,.92);color:var(--txt);cursor:pointer;
+    display:grid;place-items:center;opacity:0;pointer-events:none;transition:.3s;
+    backdrop-filter:blur(10px);
+  }
+  .to-top.show{opacity:1;pointer-events:auto}
+  .to-top:hover{background:var(--brand);border-color:transparent;transform:translateY(-3px)}
+  .to-top svg{width:18px;height:18px}
+
+  /* ---------- Responsive ---------- */
+  @media(max-width:1080px){
+    .video-grid{grid-template-columns:repeat(3,1fr)}
+    .features{grid-template-columns:repeat(2,1fr)}
+    .hero-grid{grid-template-columns:1fr;gap:48px}
+    .hero-visual{max-width:560px}
+    .foot-grid{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:860px){
+    nav.mainnav{display:none}
+    .search-box{display:none}
+    .menu-toggle{display:block}
+    .zone-inner{grid-template-columns:1fr;gap:32px}
+    .comm-grid{grid-template-columns:1fr}
+    .rank-wrap{grid-template-columns:1fr}
+    .sec{padding:58px 0}
+  }
+  @media(max-width:640px){
+    .wrap{padding:0 16px}
+    .video-grid{grid-template-columns:repeat(2,1fr);gap:14px}
+    .features{grid-template-columns:1fr}
+    .hero{padding:118px 0 56px}
+    .hero-stats{gap:24px}
+    .hstat b{font-size:22px}
+    .zone-block{padding:32px 22px}
+    .cta-banner{padding:40px 22px}
+    .foot-grid{grid-template-columns:1fr;gap:30px}
+    .foot-bottom{flex-direction:column;align-items:flex-start}
+    .btn-lg{padding:12px 22px;font-size:14px}
+    .hero-cta{width:100%}
+    .hero-cta .btn{flex:1}
+    .floating-chip.c2{left:0}
+  }
+  @media(max-width:400px){
+    .video-grid{grid-template-columns:1fr}
+  }
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- ================= TOP BAR ================= -->
+<header class="topbar" id="topbar">
+  <div class="wrap">
+    <div class="topbar-inner">
+      <a class="logo" href="#top">
+        <span class="logo-mark">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M8 5.5v13l11-6.5-11-6.5z" fill="#fff"/></svg>
+        </span>
+        <span class="logo-text">
+          <b>日夜视界</b>
+          <small>DAYNIGHT VISION</small>
+        </span>
+      </a>
+      <nav class="mainnav">
+        <a href="#top" class="active">首页</a>
+        <a href="#zone2">2区专区</a>
+        <a href="#videos">精选视频</a>
+        <a href="#ranking">热门榜单</a>
+        <a href="#community">社区</a>
+        <a href="#faq">帮助</a>
+      </nav>
+      <div class="topbar-actions">
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <input type="text" placeholder="搜索视频 / 关键词" id="searchInput">
+        </div>
+        <button class="btn btn-primary" onclick="openModal('立即体验')">免费观看</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="菜单">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <div class="hero-badge">
+          <span class="pulse"></span>
+          中韩日三地精选 · 每日更新
+        </div>
+        <h1>中韩日产2区360免费版在线看<br><span class="grad">高清流畅 · 免费畅享</span></h1>
+        <p class="hero-sub">
+          汇聚中韩日三地优质视频内容，2区专区、360免费版在线观看，免登录、无广告干扰，多端同步高清播放。每一天，都有新内容等你发现。
+        </p>
+        <div class="hero-cta">
+          <button class="btn btn-primary btn-lg" onclick="openModal('免费观看')">
+            <svg viewBox="0 0 24 24" width="17" height="17" fill="none"><path d="M8 5.5v13l11-6.5-11-6.5z" fill="currentColor"/></svg>
+            立即免费观看
+          </button>
+          <a href="#videos" class="btn btn-ghost btn-lg">浏览精选内容</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hstat"><b>12,800<span>+</span></b><small>精选视频内容</small></div>
+          <div class="hstat"><b>360<span>°</span></b><small>免费版全功能</small></div>
+          <div class="hstat"><b>98<span>%</span></b><small>播放流畅率</small></div>
+          <div class="hstat"><b>24<span>h</span></b><small>内容持续更新</small></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="floating-chip c1">
+          <span class="dot" style="background:var(--cyan)"></span>
+          高清画质 已就绪
+        </div>
+        <div class="player-card">
+          <div class="screen"></div>
+          <div class="player-tag"><span class="pulse"></span>NOW PLAYING</div>
+          <button class="play-btn" onclick="openModal('播放预览')" aria-label="播放">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M8 5.5v13l11-6.5-11-6.5z" fill="currentColor"/></svg>
+          </button>
+          <div class="player-info">
+            <div class="pi-title">中韩日精选 · 2区热门合辑</div>
+            <div class="player-progress"><i></i></div>
+            <div class="player-meta"><span>12:36 / 32:48</span><span>1080P · 免费版</span></div>
+          </div>
+        </div>
+        <div class="floating-chip c2">
+          <span class="dot" style="background:var(--brand2)"></span>
+          免登录直看
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURES ================= -->
+<section class="sec" id="features">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <h2 class="sec-title">为什么选择 <span class="hl">日夜视界</span></h2>
+        <p class="sec-desc">以用户体验为核心，打造真正免费、流畅、丰富的中韩日视频聚合平台。</p>
+      </div>
+    </div>
+    <div class="features">
+      <div class="feat reveal">
+        <div class="feat-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l3 6 6 .9-4.5 4.3 1.1 6.2L12 16.5 6.4 19.4l1.1-6.2L3 8.9 9 8l3-6z"/></svg></div>
+        <h3>360免费版全功能</h3>
+        <p>无需付费、无需订阅，360度完整功能免费开放，所有精选内容一视同仁，随时畅享。</p>
+      </div>
+      <div class="feat reveal">
+        <div class="feat-ic blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
+        <h3>高清流畅不卡顿</h3>
+        <p>智能多线路加速与自适应码率技术，1080P高清播放，弱网环境下依然稳定流畅。</p>
+      </div>
+      <div class="feat reveal">
+        <div class="feat-ic cyan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 010 18M12 3a15 15 0 000 18"/></svg></div>
+        <h3>中韩日三地精选</h3>
+        <p>2区专区汇聚中韩日优质内容，涵盖多种题材与风格，满足不同口味的观看需求。</p>
+      </div>
+      <div class="feat reveal">
+        <div class="feat-ic gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 4v5c0 4.5-3 8-7 9-4-1-7-4.5-7-9V7l7-4z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>安全无广告干扰</h3>
+        <p>干净清爽的播放环境，无弹窗、无强制跳转，专注内容本身，守护每一次观看体验。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ZONE 2 BLOCK ================= -->
+<section class="sec" id="zone2">
+  <div class="wrap">
+    <div class="zone-block reveal">
+      <div class="zone-inner">
+        <div>
+          <span class="zone-tag">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+            2区专区 · 重点推荐
+          </span>
+          <h2>中韩日产2区<br>免费版在线观看入口</h2>
+          <p>2区专区是平台为中韩日内容爱好者打造的专属聚合板块。免费版开放全部观看权限，精选合辑每日更新，分类清晰、检索便捷。</p>
+          <div class="zone-list">
+            <div class="zone-item"><span class="zi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span>中文、韩文、日文多语言内容一站聚合</div>
+            <div class="zone-item"><span class="zi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span>360免费版无需注册，点击即看</div>
+            <div class="zone-item"><span class="zi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span>智能推荐与手动分类双模式浏览</div>
+            <div class="zone-item"><span class="zi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span>收藏、历史、续播多端同步</div>
+          </div>
+        </div>
+        <div class="zone-panel">
+          <div class="zp-head">
+            <span>2区热门入口</span>
+            <span class="zp-live"><span class="pulse"></span>实时更新</span>
+          </div>
+          <div class="zp-row">
+            <span class="zp-num">01</span>
+            <div style="flex:1"><div class="zr-t">中韩日精选合辑</div><div class="zr-s">每日更新 · 免费版全开放</div></div>
+            <span class="zr-v">进入</span>
+          </div>
+          <div class="zp-row">
+            <span class="zp-num n2">02</span>
+            <div style="flex:1"><div class="zr-t">2区高清专区</div><div class="zr-s">1080P · 多线路加速</div></div>
+            <span class="zr-v">进入</span>
+          </div>
+          <div class="zp-row">
+            <span class="zp-num n3">03</span>
+            <div style="flex:1"><div class="zr-t">360免费版入口</div><div class="zr-s">免登录 · 无广告干扰</div></div>
+            <span class="zr-v">进入</span>
+          </div>
+          <div class="zp-row">
+            <span class="zp-num n4">04</span>
+            <div style="flex:1"><div class="zr-t">日韩新番速递</div><div class="zr-s">最新内容 · 抢先观看</div></div>
+            <span class="zr-v">进入</span>
+          </div>
+          <div class="zp-row">
+            <span class="zp-num n5">05</span>
+            <div style="flex:1"><div class="zr-t">社区精选推荐</div><div class="zr-s">网友口碑 · 高分合集</div></div>
+            <span class="zr-v">进入</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VIDEO GRID ================= -->
+<section class="sec" id="videos">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <h2 class="sec-title">精选视频 <span class="hl">内容</span></h2>
+        <p class="sec-desc">中韩日三地精选，2区免费版在线看，覆盖多种题材与风格，总有一款适合你。</p>
+      </div>
+      <a href="#ranking" class="sec-link">查看全部内容 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+
+    <div class="chip-row reveal" id="chipRow">
+      <span class="chip active" data-filter="all">全部</span>
+      <span class="chip" data-filter="cn">中文精选</span>
+      <span class="chip" data-filter="kr">韩流内容</span>
+      <span class="chip" data-filter="jp">日系专区</span>
+      <span class="chip" data-filter="variety">综艺合集</span>
+      <span class="chip" data-filter="doc">纪录片</span>
+      <span class="chip" data-filter="music">音乐现场</span>
+    </div>
+
+    <div class="video-grid" id="videoGrid">
+      <!-- cards injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ================= RANKING ================= -->
+<section class="sec" id="ranking">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <h2 class="sec-title">热门 <span class="hl">榜单</span></h2>
+        <p class="sec-desc">基于真实播放数据与社区互动，每日更新中韩日三地热门视频排行。</p>
+      </div>
+    </div>
+    <div class="rank-wrap">
+      <div class="rank-card reveal">
+        <div class="rank-head">
+          <span class="rh-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg></span>
+          <h3>今日热播榜</h3>
+        </div>
+        <div id="hotRank"></div>
+      </div>
+      <div class="rank-card reveal">
+        <div class="rank-head">
+          <span class="rh-ic blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 6 6 .9-4.5 4.3 1.1 6.2L12 16.5 6.4 19.4l1.1-6.2L3 8.9 9 8l3-6z"/></svg></span>
+          <h3>社区口碑榜</h3>
+        </div>
+        <div id="rateRank"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMMUNITY ================= -->
+<section class="sec community" id="community">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <h2 class="sec-title">真实的 <span class="hl">社区声音</span></h2>
+        <p class="sec-desc">来自用户的真实反馈，每一条都值得我们认真对待与持续改进。</p>
+      </div>
+    </div>
+    <div class="comm-grid">
+      <div class="comm-card reveal">
+        <div class="comm-quote">"</div>
+        <p>2区专区的内容真的很全，中韩日的都有，而且360免费版就能看高清，不用注册不用付费，体验超出预期。每天下班都会来刷一会儿。</p>
+        <div class="comm-user">
+          <div class="comm-avatar av1">林</div>
+          <div><div class="cu-n">林小舟</div><div class="cu-r">社区用户 · 观看 286 天</div></div>
+          <div class="comm-stars">★★★★★</div>
+        </div>
+      </div>
+      <div class="comm-card reveal">
+        <div class="comm-quote">"</div>
+        <p>播放很流畅，晚上高峰期也没卡过，画质清晰。最满意的是没有那些乱七八糟的弹窗广告，打开就能看，界面也干净舒服。</p>
+        <div class="comm-user">
+          <div class="comm-avatar av2">陈</div>
+          <div><div class="cu-n">陈屿</div><div class="cu-r">社区用户 · 观看 154 天</div></div>
+          <div class="comm-stars">★★★★★</div>
+        </div>
+      </div>
+      <div class="comm-card reveal">
+        <div class="comm-quote">"</div>
+        <p>分类清晰，找内容很方便，日系和韩流都分得明明白白。收藏和续播功能很贴心，换个设备登录也能接着看，细节做得不错。</p>
+        <div class="comm-user">
+          <div class="comm-avatar av3">苏</div>
+          <div><div class="cu-n">苏晚</div><div class="cu-r">社区用户 · 观看 97 天</div></div>
+          <div class="comm-stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="sec-head reveal" style="justify-content:center;text-align:center">
+      <div style="width:100%">
+        <h2 class="sec-title">常见 <span class="hl">问题</span></h2>
+        <p class="sec-desc" style="margin-left:auto;margin-right:auto">关于中韩日产2区360免费版在线看，你可能想了解这些。</p>
+      </div>
+    </div>
+    <div class="faq-wrap">
+      <div class="faq-item reveal">
+        <div class="faq-q">中韩日产2区360免费版需要注册或付费吗？<svg class="fq-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div>
+        <div class="faq-a">不需要。免费版开放全部观看权限，无需注册账号即可直接播放，也不需要任何付费订阅。你可以直接点击感兴趣的内容开始观看，全程免费。</div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">2区专区的内容都包括哪些？<svg class="fq-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div>
+        <div class="faq-a">2区专区聚合了中韩日三地的精选视频内容，涵盖综艺合集、纪录片、音乐现场、日系专区、韩流内容等多种题材，并根据用户喜好进行智能分类与推荐，每日持续更新。</div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">观看时会不会卡顿或画质不清晰？<svg class="fq-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div>
+        <div class="faq-a">平台采用智能多线路加速与自适应码率技术，默认提供高清画质，并会根据网络情况自动调节。在正常网络环境下，可以保持稳定流畅的播放体验。</div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">是否支持手机、平板和电脑多端观看？<svg class="fq-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div>
+        <div class="faq-a">支持。页面已适配手机、平板、电脑等各类设备，浏览器直接打开即可观看。收藏与历史记录可在同一账号下多端同步，换设备也能接着看。</div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">内容更新频率是怎样的？<svg class="fq-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div>
+        <div class="faq-a">2区专区的精选合辑每日更新，热门榜单和社区口碑榜也会根据真实播放与互动数据动态刷新。你可以经常回来看看，总有新内容在等你。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA BANNER ================= -->
+<section class="sec" style="padding-top:20px">
+  <div class="wrap">
+    <div class="cta-banner reveal">
+      <h2>现在就开始，免费畅看中韩日精选</h2>
+      <p>中韩日产2区360免费版在线看，免登录、无广告干扰，高清内容随时开启。加入我们，发现属于你的精彩。</p>
+      <div class="cta-btns">
+        <button class="btn btn-primary btn-lg" onclick="openModal('免费观看')">立即免费观看</button>
+        <a href="#videos" class="btn btn-ghost btn-lg">先逛逛内容</a>
+      </div>
+      <div class="cta-note">无需注册 · 无需付费 · 全端适配</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo" href="#top">
+          <span class="logo-mark">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M8 5.5v13l11-6.5-11-6.5z" fill="#fff"/></svg>
+          </span>
+          <span class="logo-text"><b>日夜视界</b><small>DAYNIGHT VISION</small></span>
+        </a>
+        <p>中韩日产2区360免费版在线看，汇聚中韩日精选视频内容，打造真实运营的视频品牌与活跃社区，免登录高清流畅播放。</p>
+        <div class="foot-social">
+          <a href="#" aria-label="微信"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8.5 3C4.4 3 1 6 1 9.7c0 2.1 1.1 4 2.9 5.2l-.7 2.3 2.6-1.3c1 .3 2 .4 3 .4h.5c-.2-.6-.3-1.2-.3-1.8 0-3.5 3.3-6.4 7.4-6.4h.5C16.2 5.1 12.7 3 8.5 3zM6 7.2a.9.9 0 110 1.8.9.9 0 010-1.8zm5 0a.9.9 0 110 1.8.9.9 0 010-1.8z"/><path d="M23 14.4c0-3-2.9-5.4-6.4-5.4s-6.4 2.4-6.4 5.4 2.9 5.4 6.4 5.4c.8 0 1.6-.1 2.3-.3l2.1 1.1-.6-1.9c1.6-1 2.6-2.5 2.6-4.3zm-8.5-1.6a.8.8 0 110-1.6.8.8 0 010 1.6zm4.2 0a.8.8 0 110-1.6.8.8 0 010 1.6z"/></svg></a>
+          <a href="#" aria-label="微博"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M10.2 20c-3.6 0-6.5-2.1-6.5-4.8 0-1.4.8-2.9 2.2-4.2 1.9-1.7 4.1-2.4 5.2-2.4.5 0 1 .1 1.3.4l.3.5c.4.7.9 1.4 1.5 1.9.3.2.5.4.5.7 0 .2-.1.3-.3.5-.3.2-.7.4-1.2.5-.2.1-.3.2-.3.4 0 .4.5.9 1.1 1.3 1.1.7 2.5 1 3.4 1 .5 0 .9-.1 1.2-.2.3-.1.6 0 .7.3.1.2.1.4.1.6 0 1.6-1.4 3.1-3.6 3.9-1.5.5-3.2.8-4.9.8H10.2z"/><path d="M19.8 5.4c-.3-.1-.6 0-.7.3-.1.3 0 .6.3.7 1.3.4 2.2 1.6 2.2 3 0 .3.2.5.5.5s.5-.2.5-.5c0-1.8-1.2-3.4-2.8-4z"/></svg></a>
+          <a href="#" aria-label="哔哩"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.5 3l2.2 2.2h6.6L17.5 3l1.4 1.4-1 1H19c1.1 0 2 .9 2 2v9c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2v-9c0-1.1.9-2 2-2h1.1L5 5l1.5-2zM7 8.2a1 1 0 100 2 1 1 0 000-2zm10 0a1 1 0 100 2 1 1 0 000-2zM7 13.5c1.3 1 3 1.5 5 1.5s3.7-.5 5-1.5l-.8-.9c-1 .8-2.5 1.2-4.2 1.2s-3.2-.4-4.2-1.2l-.8.9z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.5 7.2c-.3-1-1-1.8-2-2.1C18.7 4.6 12 4.6 12 4.6s-6.7 0-8.5.5c-1 .3-1.8 1.1-2 2.1C1 9 1 12 1 12s0 3 .5 4.8c.3 1 1 1.8 2 2.1 1.8.5 8.5.5 8.5.5s6.7 0 8.5-.5c1-.3 1.7-1.1 2-2.1.5-1.8.5-4.8.5-4.8s0-3-.5-4.8zM9.8 15.3V8.7l5.7 3.3-5.7 3.3z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>探索内容</h4>
+        <a href="#zone2">2区专区</a>
+        <a href="#videos">中文精选</a>
+        <a href="#videos">韩流内容</a>
+        <a href="#videos">日系专区</a>
+        <a href="#videos">综艺合集</a>
+      </div>
+      <div class="foot-col">
+        <h4>社区与榜单</h4>
+        <a href="#ranking">今日热播榜</a>
+        <a href="#ranking">社区口碑榜</a>
+        <a href="#community">用户评价</a>
+        <a href="#faq">常见问题</a>
+        <a href="#top">回到顶部</a>
+      </div>
+      <div class="foot-col">
+        <h4>关于平台</h4>
+        <a href="#features">平台特色</a>
+        <a href="#zone2">免费版说明</a>
+        <a href="#" onclick="openModal('联系我们');return false;">联系我们</a>
+        <a href="#" onclick="openModal('用户协议');return false;">用户协议</a>
+        <a href="#" onclick="openModal('隐私政策');return false;">隐私政策</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2024 日夜视界 DAYNIGHT VISION · 中韩日产2区360免费版在线看</span>
+      <div class="fb-links">
+        <a href="#" onclick="openModal('用户协议');return false;">用户协议</a>
+        <a href="#" onclick="openModal('隐私政策');return false;">隐私政策</a>
+        <a href="#" onclick="openModal('内容声明');return false;">内容声明</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= MODAL ================= -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box">
+    <div class="modal-head">
+      <h3 id="modalTitle">提示</h3>
+      <button class="modal-close" onclick="closeModal()" aria-label="关闭">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="modal-screen">
+      <div class="ms-art"></div>
+      <div class="ms-msg">
+        <div class="ms-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M8 5.5v13l11-6.5-11-6.5z" fill="currentColor"/></svg></div>
+        <b id="modalMsgTitle">准备就绪</b>
+        <span id="modalMsgSub">中韩日产2区360免费版，免登录高清畅看</span>
+      </div>
+    </div>
+    <div class="modal-foot">
+      <span>当前为体验预览 · 正式内容请以实际页面为准</span>
+      <button class="btn btn-primary" style="padding:8px 18px;font-size:13px" onclick="closeModal()">我知道了</button>
+    </div>
+  </div>
+</div>
+
+<!-- ================= BACK TO TOP ================= -->
+<button class="to-top" id="toTop" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<script>
+/* ============ Data ============ */
+var videoData = [
+  {t:"中韩日精选合辑·第一季", tag:"精选", cat:"cn", dur:"32:48", views:"128.6万", likes:"3.2万", art:"a1", badge:"free", badgeTxt:"免费"},
+  {t:"2区热门日系内容合集", tag:"日系", cat:"jp", dur:"24:15", views:"96.3万", likes:"2.4万", art:"a2", badge:"hot", badgeTxt:"热门"},
+  {t:"韩流精选现场·高清版", tag:"韩流", cat:"kr", dur:"45:02", views:"87.1万", likes:"2.1万", art:"a3", badge:"new", badgeTxt:"新上"},
+  {t:"中文综艺精选周榜", tag:"综艺", cat:"variety", dur:"58:30", views:"76.8万", likes:"1.9万", art:"a4", badge:"free", badgeTxt:"免费"},
+  {t:"中韩日纪录片精选", tag:"纪录", cat:"doc", dur:"41:12", views:"65.4万", likes:"1.6万", art:"a5", badge:"free", badgeTxt:"免费"},
+  {t:"日系音乐现场合集", tag:"音乐", cat:"music", dur:"28:47", views:"58.2万", likes:"1.4万", art:"a6", badge:"hot", badgeTxt:"热门"},
+  {t:"360免费版专属片单", tag:"免费", cat:"cn", dur:"36:20", views:"52.7万", likes:"1.3万", art:"a7", badge:"new", badgeTxt:"新上"},
+  {t:"韩流综艺高能片段", tag:"韩流", cat:"kr", dur:"19:58", views:"47.3万", likes:"1.1万", art:"a8", badge:"free", badgeTxt:"免费"}
+];
+
+var hotRankData = [
+  {t:"中韩日精选合辑·第一季", s:"128.6万次播放", th:"t1"},
+  {t:"2区热门日系内容合集", s:"96.3万次播放", th:"t2"},
+  {t:"韩流精选现场·高清版", s:"87.1万次播放", th:"t3"},
+  {t:"中文综艺精选周榜", s:"76.8万次播放", th:"t4"},
+  {t:"中韩日纪录片精选", s:"65.4万次播放", th:"t5"},
+  {t:"日系音乐现场合集", s:"58.2万次播放", th:"t6"},
+  {t:"360免费版专属片单", s:"52.7万次播放", th:"t7"}
+];
+
+var rateRankData = [
+  {t:"中韩日精选合辑·第一季", s:"4.9 分 · 社区推荐", th:"t3"},
+  {t:"韩流精选现场·高清版", s:"4.8 分 · 口碑之选", th:"t1"},
+  {t:"2区热门日系内容合集", s:"4.8 分 · 高分内容", th:"t2"},
+  {t:"日系音乐现场合集", s:"4.7 分 · 用户喜爱", th:"t6"},
+  {t:"中韩日纪录片精选", s:"4.7 分 · 深度推荐", th:"t5"},
+  {t:"中文综艺精选周榜", s:"4.6 分 · 轻松愉快", th:"t4"},
+  {t:"韩流综艺高能片段", s:"4.6 分 · 精彩合集", th:"t8"}
+];
+
+/* ============ Render Video Grid ============ */
+function renderVideos(filter){
+  var grid = document.getElementById('videoGrid');
+  var html = '';
+  videoData.forEach(function(v){
+    if(filter && filter !== 'all' && v.cat !== filter) return;
+    html += '<div class="vcard" data-cat="'+v.cat+'" onclick="openModal(\'播放：'+v.t+'\')">' +
+      '<div class="vthumb">' +
+        '<div class="art '+v.art+'"></div>' +
+        '<span class="vbadge b-'+v.badge+'">'+v.badgeTxt+'</span>' +
+        '<span class="mini-play"><svg viewBox="0 0 24 24" fill="none"><path d="M8 5.5v13l11-6.5-11-6.5z" fill="currentColor"/></svg></span>' +
+        '<span class="vdur">'+v.dur+'</span>' +
+      '</div>' +
+      '<div class="vinfo">' +
+        '<span class="vtag">'+v.tag+'</span>' +
+        '<div class="vtitle">'+v.t+'</div>' +
+        '<div class="vmeta">' +
+          '<span class="vm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>'+v.views+'</span>' +
+          '<span class="vm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 11c0 5.5-7 10-7 10z"/></svg>'+v.likes+'</span>' +
+        '</div>' +
+      '</div>' +
+    '</div>';
+  });
+  grid.innerHTML = html;
+}
+
+/* ============ Render Rankings ============ */
+function renderRank(containerId, data, isRate){
+  var el = document.getElementById(containerId);
+  var html = '';
+  data.forEach(function(d, i){
+    var rkClass = i === 0 ? 'top1' : i === 1 ? 'top2' : i === 2 ? 'top3' : '';
+    html += '<div class="rank-item" onclick="openModal(\'播放：'+d.t+'\')">' +
+      '<div class="rk '+rkClass+'">'+(i+1)+'</div>' +
+      '<div class="ri-th '+d.th+'"></div>' +
+      '<div class="ri-body"><div class="rib-t">'+d.t+'</div><div class="rib-s">'+d.s+'</div></div>' +
+      '<div class="ri-play"><svg viewBox="0 0 24 24" fill="none"><path d="M8 5.5v13l11-6.5-11-6.5z" fill="currentColor"/></svg></div>' +
+    '</div>';
+  });
+  el.innerHTML = html;
+}
+
+/* ============ Chips filter ============ */
+var chips = document.querySelectorAll('.chip');
+chips.forEach(function(chip){
+  chip.addEventListener('click', function(){
+    chips.forEach(function(c){ c.classList.remove('active'); });
+    chip.classList.add('active');
+    renderVideos(chip.getAttribute('data-filter'));
+  });
+});
+
+/* ============ Modal ============ */
+var overlay = document.getElementById('modalOverlay');
+function openModal(title){
+  var isPlay = title.indexOf('播放：') === 0;
+  document.getElementById('modalTitle').textContent = isPlay ? '正在播放' : title;
+  document.getElementById('modalMsgTitle').textContent = isPlay ? title.replace('播放：','') : (title || '提示');
+  document.getElementById('modalMsgSub').textContent = isPlay ? '360免费版 · 高清播放 · 免登录观看' : '中韩日产2区360免费版，免登录高清畅看';
+  overlay.classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal(){
+  overlay.classList.remove('show');
+  document.body.style.overflow = '';
+}
+overlay.addEventListener('click', function(e){
+  if(e.target === overlay) closeModal();
+});
+document.addEventListener('keydown', function(e){
+  if(e.key === 'Escape') closeModal();
+});
+
+/* ============ FAQ accordion ============ */
+document.querySelectorAll('.faq-q').forEach(function(q){
+  q.addEventListener('click', function(){
+    var item = q.parentElement;
+    var wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(function(f){ f.classList.remove('open'); });
+    if(!wasOpen) item.classList.add('open');
+  });
+});
+
+/* ============ Scroll reveal ============ */
+var revealEls = document.querySelectorAll('.reveal');
+var observer = new IntersectionObserver(function(entries){
+  entries.forEach(function(entry){
+    if(entry.isIntersecting){
+      entry.target.classList.add('in');
+      observer.unobserve(entry.target);
+    }
+  });
+}, {threshold:0.1, rootMargin:'0px 0px -40px 0px'});
+revealEls.forEach(function(el){ observer.observe(el); });
+
+/* ============ Topbar hide/show + back to top ============ */
+var lastScroll = 0;
+var topbar = document.getElementById('topbar');
+var toTop = document.getElementById('toTop');
+window.addEventListener('scroll', function(){
+  var y = window.scrollY;
+  if(y > 120 && y > lastScroll){
+    topbar.classList.add('hide');
+  } else {
+    topbar.classList.remove('hide');
+  }
+  if(y > 500){
+    toTop.classList.add('show');
+  } else {
+    toTop.classList.remove('show');
+  }
+  lastScroll = y;
+});
+toTop.addEventListener('click', function(){
+  window.scrollTo({top:0, behavior:'smooth'});
+});
+
+/* ============ Nav active state on scroll ============ */
+var sections = document.querySelectorAll('section[id]');
+var navLinks = document.querySelectorAll('nav.mainnav a');
+window.addEventListener('scroll', function(){
+  var scrollPos = window.scrollY + 120;
+  sections.forEach(function(sec){
+    if(scrollPos >= sec.offsetTop && scrollPos < sec.offsetTop + sec.offsetHeight){
+      navLinks.forEach(function(a){
+        a.classList.remove('active');
+        if(a.getAttribute('href') === '#' + sec.id) a.classList.add('active');
+      });
+    }
+  });
+});
+
+/* ============ Search filter ============ */
+var searchInput = document.getElementById('searchInput');
+searchInput.addEventListener('input', function(){
+  var q = this.value.trim().toLowerCase();
+  var cards = document.querySelectorAll('#videoGrid .vcard');
+  cards.forEach(function(card){
+    var txt = card.querySelector('.vtitle').textContent.toLowerCase() + card.querySelector('.vtag').textContent.toLowerCase();
+    card.style.display = (!q || txt.indexOf(q) > -1) ? 'flex' : 'none';
+  });
+});
+
+/* ============ Menu toggle (mobile) ============ */
+document.getElementById('menuToggle').addEventListener('click', function(){
+  var nav = document.querySelector('nav.mainnav');
+  if(nav.style.display === 'flex'){
+    nav.style.display = 'none';
+  } else {
+    nav.style.display = 'flex';
+    nav.style.position = 'absolute';
+    nav.style.top = '68px';
+    nav.style.left = '0';
+    nav.style.right = '0';
+    nav.style.flexDirection = 'column';
+    nav.style.background = 'rgba(10,12,18,.97)';
+    nav.style.padding = '14px 24px';
+    nav.style.borderBottom = '1px solid var(--line)';
+    nav.style.backdropFilter = 'blur(18px)';
+  }
+});
+
+/* ============ Init ============ */
+renderVideos('all');
+renderRank('hotRank', hotRankData, false);
+renderRank('rateRank', rateRankData, true);
+
+/* ============ Number counter animation ============ */
+function animateCounters(){
+  var stats = document.querySelectorAll('.hstat b');
+  stats.forEach(function(stat){
+    var text = stat.textContent;
+    var match = text.match(/([\d,]+)/);
+    if(!match) return;
+    var target = parseInt(match[1].replace(/,/g,''), 10);
+    var suffix = text.replace(match[1], '');
+    var duration = 1400;
+    var start = 0;
+    var startTime = null;
+    function step(ts){
+      if(!startTime) startTime = ts;
+      var progress = Math.min((ts - startTime) / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      var current = Math.floor(eased * target);
+      stat.innerHTML = current.toLocaleString() + suffix;
+      if(progress < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  });
+}
+
+var heroObserver = new IntersectionObserver(function(entries){
+  entries.forEach(function(entry){
+    if(entry.isIntersecting){
+      animateCounters();
+      heroObserver.disconnect();
+    }
+  });
+}, {threshold:0.3});
+var heroStatsEl = document.querySelector('.hero-stats');
+if(heroStatsEl) heroObserver.observe(heroStatsEl);
+
+/* ============ Smooth scroll for older browsers ============ */
+document.querySelectorAll('a[href^="#"]').forEach(function(anchor){
+  anchor.addEventListener('click', function(e){
+    var href = this.getAttribute('href');
+    if(href === '#') return;
+    var target = document.querySelector(href);
+    if(target){
+      e.preventDefault();
+      target.scrollIntoView({behavior:'smooth', block:'start'});
+      var nav = document.querySelector('nav.mainnav');
+      if(window.innerWidth <= 860){ nav.style.display = 'none'; }
+    }
+  });
+});
+</script>
+</body>
+</html>
